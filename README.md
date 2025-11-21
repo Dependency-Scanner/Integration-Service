@@ -68,7 +68,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-3. Visit `http://127.0.0.1:8000/docs` to view and try the API.
+3. Visit `http://127.0.0.1:8081/docs` to view and try the API.
 
 ## Running with Docker
 
@@ -76,7 +76,7 @@ Build and run the container:
 
 ```bash
 docker build -t integration-service .
-docker run -p 8000:8000 --env-file .env integration-service
+docker run -p 8081:8081 --env-file .env integration-service
 ```
 
 ## Example Workflow (high level)

@@ -51,7 +51,7 @@ uvicorn main:app --reload
 
 ```bash
 docker build -t integration-service .
-docker run -p 8000:8000 --env-file .env integration-service
+docker run -p 8081:8081 --env-file .env integration-service
 ```
 
 ## Architecture
